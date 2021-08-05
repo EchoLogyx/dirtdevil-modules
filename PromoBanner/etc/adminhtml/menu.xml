@@ -3,7 +3,7 @@
     <menu>
         <add id="DirtDevil_PromoBanner::banners_slider" title="Dirtdevil" translate="title" 
         module="DirtDevil_PromoBanner" sortOrder="0" resource="DirtDevil_PromoBanner::banners_slider"/>
-        <add id="DirtDevil_PromoBanner::all_banners" title="All Promo Banners" translate="title" module="DirtDevil_PromoBanner" 
+        <add id="DirtDevil_PromoBanner::all_banners" title="All Promo Banners one" translate="title" module="DirtDevil_PromoBanner" 
         sortOrder="10" resource="DirtDevil_PromoBanner::all_banners" parent="DirtDevil_PromoBanner::banners_slider" action="dirtdevil_banners_slider/banner/index"/>
     </menu>
 </config> 
