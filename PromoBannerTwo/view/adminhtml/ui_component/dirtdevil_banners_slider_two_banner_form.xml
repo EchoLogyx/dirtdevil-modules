@@ -3,33 +3,33 @@
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <argument name="data" xsi:type="array">
         <item name="js_config" xsi:type="array">
-            <item name="provider" xsi:type="string">dirtdevil_banners_slider_banner_form.banner_form_data_source</item>
-            <item name="deps" xsi:type="string">dirtdevil_banners_slider_banner_form.banner_form_data_source</item>
+            <item name="provider" xsi:type="string">dirtdevil_banners_slider_two_banner_form.banner_form_data_source</item>
+            <item name="deps" xsi:type="string">dirtdevil_banners_slider_two_banner_form.banner_form_data_source</item>
         </item>
         <item name="label" xsi:type="string" translate="true">General Information</item>
         <item name="config" xsi:type="array">
             <item name="dataScope" xsi:type="string">data</item>
-            <item name="namespace" xsi:type="string">dirtdevil_banners_slider_banner_form</item>
+            <item name="namespace" xsi:type="string">dirtdevil_banners_slider_two_banner_form</item>
         </item>
         <item name="template" xsi:type="string">templates/form/collapsible</item>
         <item name="buttons" xsi:type="array">
-            <item name="back" xsi:type="string">DirtDevil\PromoBanner\Block\Adminhtml\Banner\Edit\BackButton</item>
-            <item name="delete" xsi:type="string">DirtDevil\PromoBanner\Block\Adminhtml\Banner\Edit\DeleteButton</item>
-            <item name="reset" xsi:type="string">DirtDevil\PromoBanner\Block\Adminhtml\Banner\Edit\ResetButton</item>
-            <item name="save" xsi:type="string">DirtDevil\PromoBanner\Block\Adminhtml\Banner\Edit\SaveButton</item>
-            <item name="save_and_continue" xsi:type="string">DirtDevil\PromoBanner\Block\Adminhtml\Banner\Edit\SaveAndContinueButton</item>
+            <item name="back" xsi:type="string">DirtDevil\PromoBannerTwo\Block\Adminhtml\Banner\Edit\BackButton</item>
+            <item name="delete" xsi:type="string">DirtDevil\PromoBannerTwo\Block\Adminhtml\Banner\Edit\DeleteButton</item>
+            <item name="reset" xsi:type="string">DirtDevil\PromoBannerTwo\Block\Adminhtml\Banner\Edit\ResetButton</item>
+            <item name="save" xsi:type="string">DirtDevil\PromoBannerTwo\Block\Adminhtml\Banner\Edit\SaveButton</item>
+            <item name="save_and_continue" xsi:type="string">DirtDevil\PromoBannerTwo\Block\Adminhtml\Banner\Edit\SaveAndContinueButton</item>
         </item>
     </argument>
 
     <dataSource name="banner_form_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
-            <argument name="class" xsi:type="string">DirtDevil\PromoBanner\Model\Banner\DataProvider</argument>
+            <argument name="class" xsi:type="string">DirtDevil\PromoBannerTwo\Model\Banner\DataProvider</argument>
             <argument name="name" xsi:type="string">banner_form_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">id</argument>
             <argument name="requestFieldName" xsi:type="string">id</argument>
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
-                    <item name="submit_url" xsi:type="url" path="dirtdevil_banners_slider/banner/save"/>
+                    <item name="submit_url" xsi:type="url" path="dirtdevil_banners_slider_two/banner/save"/>
                 </item>
             </argument>
         </argument>
@@ -124,7 +124,7 @@
                         <item name="required-entry" xsi:type="boolean">true</item>
                     </item>
                     <item name="uploaderConfig" xsi:type="array">
-                        <item name="url" xsi:type="url" path="dirtdevil_banners_slider/banner/upload"/>
+                        <item name="url" xsi:type="url" path="dirtdevil_banners_slider_two/banner/upload"/>
                     </item>
                 </item>
             </argument>
