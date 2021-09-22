@@ -10,7 +10,7 @@ use DirtDevil\PromoBanner\Model\ResourceModel\Banner\Collection as BannerCollect
 class Collection extends BannerCollection implements SearchResultInterface
 {
 
-    protected $aggregations;
+    protected $aggregations; 
 
 
     public function __construct(
